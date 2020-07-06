@@ -2,10 +2,8 @@ import { Component, ViewChild, OnInit, Input, ViewChildren } from '@angular/core
 import { CornerstoneDirective } from './cornerstone.directive';
 import { ThumbnailDirective } from './thumbnail.directive';
 
-
-
-declare const cornerstone;
-declare const cornerstoneTools;
+import * as cornerstone from 'cornerstone-core';
+import * as cornerstoneTools from 'cornerstone-tools';
 
 @Component({
   selector: 'dicom-viewer',
@@ -21,7 +19,7 @@ export class DICOMViewerComponent implements OnInit {
 
   public seriesList = []; // list of series on the images being displayed
   public currentSeriesIndex = 0;
-  public currentSeries: any = {};
+  public currentSeries: any = {}
   public imageCount = 0; // total image count being viewed
 
   // control enable/disable image scroll buttons

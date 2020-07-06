@@ -1,7 +1,6 @@
 import { Directive, ElementRef, OnInit, Input, AfterViewChecked } from '@angular/core';
 
-
-declare const cornerstone;
+import * as cornerstone from 'cornerstone-core';
 
 
 @Directive({

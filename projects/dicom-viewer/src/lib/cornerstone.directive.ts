@@ -1,13 +1,9 @@
 import { Directive, ElementRef, HostListener, OnInit, AfterViewChecked } from '@angular/core';
 import * as Hammer from 'hammerjs';
 
-
-declare const cornerstone;
-declare const cornerstoneTools;
-declare const cornerstoneMath;;
-
-
-
+import * as cornerstone from 'cornerstone-core';
+import * as cornerstoneTools from 'cornerstone-tools';
+import * as cornerstoneMath from 'cornerstone-math';
 
 @Directive({
   selector: '[cornerstone]',
